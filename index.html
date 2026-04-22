@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="Hassan Abdullah — Full-Stack Engineer. Building fast, scalable web applications with Next.js, Node.js, and PostgreSQL.">
+<meta property="og:title" content="Hassan Abdullah — Full-Stack Engineer">
+<meta property="og:description" content="I build fast, scalable web applications. Available for freelance and full-time roles.">
+<meta property="og:type" content="website">
+<title>Hassan Abdullah — Full-Stack Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,400&family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+<div class="hero-bg-grid"></div>
+<div class="hero-orb"></div>
+
+<!-- NAVIGATION -->
+<nav id="navbar">
+  <a href="#" class="logo" onclick="showPage('home'); return false;">Hassan<strong>.</strong>dev</a>
+  <ul class="nav-links">
+    <li><button class="tab-btn active" onclick="showPage('home')" id="tab-home">Home</button></li>
+    <li><button class="tab-btn" onclick="showPage('research')" id="tab-research">Research</button></li>
+    <li><button class="tab-btn" onclick="showPage('projects')" id="tab-projects">Work</button></li>
+    <li><button class="tab-btn" onclick="showPage('contact')" id="tab-contact">Contact</button></li>
+  </ul>
+  <a href="resume.pdf" download class="nav-hire">Download CV ↓</a>
+  <button class="hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="#" onclick="showPage('home'); closeMobile(); return false;">Home</a></li>
+    <li><a href="#" onclick="showPage('research'); closeMobile(); return false;">Research</a></li>
+    <li><a href="#" onclick="showPage('projects'); closeMobile(); return false;">Work</a></li>
+    <li><a href="#" onclick="showPage('contact'); closeMobile(); return false;">Contact</a></li>
+    <li><a href="resume.pdf" download>Download CV ↓</a></li>
+  </ul>
+</div>
+
+<!-- ══════════════════════════════
+     HOME PAGE
+══════════════════════════════ -->
+<div class="page active" id="page-home">
+
+  <section class="hero">
+    <div class="hero-inner wrap">
+      <div class="hero-left">
+        <div class="avail-badge">
+          <span class="avail-dot"></span>
+          Open to work — 2026
+        </div>
+        <h1>
+          <span class="hero-name"><em>Hassan</em> Abdullah</span>
+          <span class="hero-role">Full-Stack<br>Engineer</span>
+        </h1>
+        <p class="hero-desc">
+          I build <strong>fast, scalable web applications</strong> from database
+          schema to deployed product. Clean code, real architecture, no shortcuts.
+        </p>
+        <div class="hero-btns">
+          <a href="#" class="btn-primary" onclick="showPage('projects'); return false;">View My Work →</a>
+          <a href="#" class="btn-secondary" onclick="showPage('contact'); return false;">Let's Talk ↗</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-val">3<em>+</em></span>
+            <span class="stat-lbl">Years building</span>
+          </div>
+          <div class="stat">
+            <span class="stat-val">15<em>+</em></span>
+            <span class="stat-lbl">Projects shipped</span>
+          </div>
+          <div class="stat">
+            <span class="stat-val">8<em>+</em></span>
+            <span class="stat-lbl">Happy clients</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="photo-frame">
+          <div class="photo-frame-deco"></div>
+          <div class="photo-frame-deco2"></div>
+          <div class="photo-wrap">
+            <!--
+              TO ADD YOUR PHOTO:
+              Replace the <div class="photo-placeholder">...</div> below with:
+              <img src="your-photo.jpg" alt="Hassan Abdullah" style="width:100%;height:100%;object-fit:cover;">
+            -->
+            <div class="photo-placeholder">
+              <div class="photo-avatar" style="margin: auto;">HA</div>
+              <div class="photo-name-block">
+                <h3>Hassan Abdullah</h3>
+                <p>Full-Stack Engineer</p>
+                <span class="photo-swap-note"><img src="profile.jpg" alt="Hassan Abdullah" style="margin-top: -45%;"></span>
+              </div>
+            </div>
+            <div class="photo-badge">
+              <span class="badge-dot"></span>
+              <div>
+                <div class="badge-text">Available for work</div>
+                <div class="badge-sub">Freelance & full-time roles</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee-strip">
+    <div class="mq-track">
+      <div class="mq-inner" aria-hidden="true">
+        <span>Next.js</span><em>·</em><span>Node.js</span><em>·</em>
+        <span>PostgreSQL</span><em>·</em><span>TypeScript</span><em>·</em>
+        <span>Prisma</span><em>·</em><span>REST APIs</span><em>·</em>
+        <span>JWT Auth</span><em>·</em><span>Tailwind CSS</span><em>·</em>
+        <span>Vercel</span><em>·</em><span>Railway</span><em>·</em>
+        <span>Supabase</span><em>·</em><span>Docker</span><em>·</em>
+        <span>Next.js</span><em>·</em><span>Node.js</span><em>·</em>
+        <span>PostgreSQL</span><em>·</em><span>TypeScript</span><em>·</em>
+        <span>Prisma</span><em>·</em><span>REST APIs</span><em>·</em>
+        <span>JWT Auth</span><em>·</em><span>Tailwind CSS</span><em>·</em>
+        <span>Vercel</span><em>·</em><span>Railway</span><em>·</em>
+        <span>Supabase</span><em>·</em><span>Docker</span><em>·</em>
+      </div>
+    </div>
+  </div>
+
+  <!-- Skills quick section -->
+  <!-- <div class="wrap">
+    <section class="section">
+      <div class="reveal">
+        <div class="sec-eyebrow">Skills</div>
+        <h2 class="sec-title">What I <em>bring</em> to every <span class="grad">project</span></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="sg reveal"><div class="sg-label">Frontend</div><div class="tags"><span>Next.js</span><span>React</span><span>TypeScript</span><span>Tailwind CSS</span><span>Framer Motion</span></div></div>
+        <div class="sg reveal"><div class="sg-label">Backend</div><div class="tags"><span>Node.js</span><span>Express</span><span>REST APIs</span><span>JWT Auth</span><span>Prisma ORM</span><span>Helmet.js</span></div></div>
+        <div class="sg reveal"><div class="sg-label">Database & Cloud</div><div class="tags"><span>PostgreSQL</span><span>Supabase</span><span>Redis</span><span>Vercel</span><span>Railway</span></div></div>
+        <div class="sg reveal"><div class="sg-label">Tools</div><div class="tags"><span>Git & GitHub</span><span>Docker</span><span>Jest</span><span>Postman</span><span>Figma</span></div></div>
+      </div>
+    </section>
+  </div> -->
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span class="footer-copy">© 2026 Hassan Abdullah</span>
+      <div class="footer-links">
+        <a href="https://github.com/abdullah3566" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/hassan-abdullah-8177573a9/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:hassanabdullaho@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<!-- ══════════════════════════════
+     RESEARCH PAGE
+══════════════════════════════ -->
+<div class="page" id="page-research" style="margin-top: -9%;">
+<div class="wrap">
+  <section class="section">
+
+    <div class="reveal">
+      <div class="sec-eyebrow">Research</div>
+      <h2 class="sec-title">The person <em>behind</em> the <span class="grad">code</span></h2>
+    </div>
+
+    <!-- About grid -->
+    <div class="about-grid">
+      <div class="about-photo-col reveal-left">
+        <div class="about-photo-frame">
+          <!--
+            TO ADD YOUR PHOTO:
+            Replace the <div class="about-photo-inner">...</div> with:
+            <img src="your-photo.jpg" alt="Hassan Abdullah" style="width:100%;height:100%;object-fit:cover;border-radius:20px;">
+          -->
+          <div class="about-photo-inner">
+            <div class="about-avatar">HA</div>
+            <div class="about-photo-name">Hassan Abdullah</div>
+            <div class="about-photo-title">Full-Stack Engineer</div>
+            <span class="about-photo-swap"><img src="AV.jpg" alt="Hassan Abdullah"></span>
+          </div>
+        </div>
+
+        <div class="about-quick">
+          <div class="aq-item">
+            <strong>Based in</strong>
+            <span>Islamabad, PK</span>
+          </div>
+          <div class="aq-item">
+            <strong>Focus</strong>
+            <span>Web apps & APIs</span>
+          </div>
+          <div class="aq-item">
+            <strong>Stack</strong>
+            <span>Next.js + Node.js</span>
+          </div>
+          <div class="aq-item">
+            <strong>Status</strong>
+            <span class="status-open">● Open to work</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-body reveal">
+        <p>I'm a <strong>Full-Stack Engineer</strong> focused on building real, production-grade web applications. I care about clean architecture, long-term maintainability, and shipping things that actually work under load not just in demos.</p>
+        <p>My approach: <strong>understand the problem first, design the data model second, write code third.</strong> Too many developers skip the first two steps. I don't.</p>
+        <p>Outside of client work, I spend time reading about <strong>systems design, distributed systems,</strong> and the evolving frontend ecosystem. I believe strong engineers are curious engineers.</p>
+        <p>Looking for teams that <strong>ship fast, debate architecture, and care about the craft.</strong></p>
+
+        <!-- Timeline -->
+        <div class="timeline">
+          <div class="sec-eyebrow" style="margin-top:2.5rem;margin-bottom:1.5rem">Journey</div>
+          <div class="tl-item">
+            <div class="tl-year">2025</div>
+            <div class="tl-content">
+              <h4>Freelance Full-Stack Engineer</h4>
+              <p>Building SaaS platforms and custom web applications for clients. Specializing in Next.js + Node.js + PostgreSQL.</p>
+              <span class="tl-badge">Present</span>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-year">2025</div>
+            <div class="tl-content">
+              <h4>Laravel / PHP Developer at Aurion Tech Global | (June 2025 – April 2026) (Current)</h4>
+              <p>Developing backend systems and APIs using Laravel, PHP, and MySQL, with performance optimization.</p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-year">2025</div>
+            <div class="tl-content">
+              <h4>Junior Developer at Expert Soft Solutions | (Feb  2025 -  June 2025  )</h4>
+              <p>Developed and optimized web features using Python, Django, and React.js</p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-year">2023</div>
+            <div class="tl-content">
+              <h4>IT Services Lead at BEMCON | (Nov 2023 - Jan  2025)</h4>
+              <p>Managed IT operations and infrastructure, ensuring smooth service delivery.</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Currently Exploring -->
+    <div style="margin-top:6rem">
+      <div class="reveal">
+        <div class="sec-eyebrow">Currently Exploring</div>
+        <h2 class="sec-title">What I'm <em>learning</em> right <span class="grad">now</span></h2>
+      </div>
+      <div class="exploring-grid">
+        <div class="ex-card reveal">
+          <div class="ex-icon">⚙️</div>
+          <h3 class="ex-title">Systems Design</h3>
+          <p class="ex-desc">Studying how large-scale systems are architected — load balancing, caching strategies, database sharding, and event-driven design.</p>
+          <span class="ex-tag">Architecture</span>
+        </div>
+        <div class="ex-card reveal">
+          <div class="ex-icon">🔬</div>
+          <h3 class="ex-title">tRPC & Type Safety</h3>
+          <p class="ex-desc">Exploring end-to-end type safety across the full stack. How tRPC eliminates contract mismatch between frontend and backend.</p>
+          <span class="ex-tag">TypeScript</span>
+        </div>
+        <div class="ex-card reveal">
+          <div class="ex-icon">🧩</div>
+          <h3 class="ex-title">Edge Computing</h3>
+          <p class="ex-desc">Experimenting with Vercel Edge Functions and Cloudflare Workers — running logic closer to the user without cold start penalties.</p>
+          <span class="ex-tag">Infrastructure</span>
+        </div>
+        <div class="ex-card reveal">
+          <div class="ex-icon">📐</div>
+          <h3 class="ex-title">Database Internals</h3>
+          <p class="ex-desc">Reading about how PostgreSQL executes query plans, builds indexes, and how MVCC works under the hood.</p>
+          <span class="ex-tag">PostgreSQL</span>
+        </div>
+        <div class="ex-card reveal">
+          <div class="ex-icon">🤖</div>
+          <h3 class="ex-title">AI Integration Patterns</h3>
+          <p class="ex-desc">Building AI-powered features into web apps — streaming responses, embeddings, vector search with pgvector.</p>
+          <span class="ex-tag">AI / LLMs</span>
+        </div>
+        <div class="ex-card reveal">
+          <div class="ex-icon">📖</div>
+          <h3 class="ex-title">Technical Writing</h3>
+          <p class="ex-desc">Good writing is how good engineers share knowledge, onboard teams, and build reputation. Practicing this deliberately.</p>
+          <span class="ex-tag">Craft</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reading -->
+    <div style="margin-top:5.5rem">
+      <div class="reveal">
+        <div class="sec-eyebrow">Reading</div>
+        <h2 class="sec-title">Books that <em>shaped</em> how I <span class="grad">think</span></h2>
+      </div>
+      <div class="books-grid">
+        <div class="ex-card reveal">
+          <h3 class="ex-title" style="font-size:.95rem">Designing Data-Intensive Applications</h3>
+          <p class="ex-desc" style="margin-top:.4rem">Martin Kleppmann — the Bible of distributed systems. Changed how I think about data at scale.</p>
+          <span class="ex-tag">Systems</span>
+        </div>
+        <div class="ex-card reveal">
+          <h3 class="ex-title" style="font-size:.95rem">Clean Architecture</h3>
+          <p class="ex-desc" style="margin-top:.4rem">Robert Martin — why separation of concerns matters more than frameworks. Directly influences my backend structure.</p>
+          <span class="ex-tag">Architecture</span>
+        </div>
+        <div class="ex-card reveal">
+          <h3 class="ex-title" style="font-size:.95rem">The Pragmatic Programmer</h3>
+          <p class="ex-desc" style="margin-top:.4rem">Hunt & Thomas — still the best career book for engineers. Read it once a year.</p>
+          <span class="ex-tag">Career</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+</div>
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <span class="footer-copy">© 2026 Hassan Abdullah</span>
+    <div class="footer-links">
+      <a href="https://github.com/abdullah3566" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/hassan-abdullah-8177573a9/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:hassanabdullaho@gmail.com">Email</a>
+    </div>
+  </div>
+</footer>
+</div>
+
+<!-- ══════════════════════════════
+     PROJECTS PAGE
+══════════════════════════════ -->
+<div class="page" id="page-projects" >
+<div class="wrap">
+  <section class="section" style="margin-top: -10%;">
+
+    <div class="reveal">
+      <div class="sec-eyebrow">Selected Work</div>
+      <h2 class="sec-title">Projects that <em>ship</em> and <span class="grad">scale</span></h2>
+    </div>
+
+    <!-- Featured -->
+    <div class="proj-featured reveal">
+      <div class="pf-visual">
+        <div class="pf-rings">
+          <div class="ring r1"></div>
+          <div class="ring r2"></div>
+          <div class="ring r3"></div>
+          <span class="r-icon">🛒</span>
+        </div>
+      </div>
+      <div class="pf-body">
+        <div class="proj-eyebrow">01 — Featured Project</div>
+        <h3 class="proj-title">ShopFlow — Multi-Vendor E-Commerce</h3>
+        <div class="proj-result">↑ 40% faster checkout · 500+ concurrent users</div>
+        <p class="proj-desc">Full-stack marketplace with real-time inventory, Stripe payments, role-based dashboards for vendors and admins, and sub-200ms API responses under load. Includes order tracking and a full admin analytics panel.</p>
+        <div class="proj-stack">
+          <span>Next.js</span><span>Node.js</span><span>PostgreSQL</span>
+          <span>Prisma</span><span>Stripe</span><span>Redis</span><span>JWT</span>
+        </div>
+        <div class="proj-links">
+          <a href="#" class="proj-link" target="_blank">↗ Live Demo</a>
+          <a href="https://github.com" class="proj-link" target="_blank">⌥ GitHub</a>
+          <a href="#" class="proj-link">→ Case Study</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card row -->
+    <div class="proj-row">
+      <div class="proj-card reveal">
+        <div class="pc-visual" style="background:linear-gradient(160deg,#0B0E1A,#0f1a35)">
+          <span>📊</span>
+        </div>
+        <div class="pc-body">
+          <div class="proj-eyebrow">02</div>
+          <h3 class="pc-title">TaskBoard SaaS</h3>
+          <div class="proj-result-sm">↑ 200+ active teams</div>
+          <p class="pc-desc">Kanban project management with real-time collaboration, team roles, and analytics dashboard.</p>
+          <div class="pc-stack">
+            <span>Next.js</span><span>Express</span><span>Socket.io</span>
+          </div>
+          <div class="proj-links">
+            <a href="#" class="proj-link">↗ Demo</a>
+            <a href="https://github.com" class="proj-link">⌥ GitHub</a>
+          </div>
+        </div>
+      </div>
+      <div class="proj-card reveal">
+        <div class="pc-visual" style="background:linear-gradient(160deg,#0B0E1A,#160d2e)">
+          <span>🔐</span>
+        </div>
+        <div class="pc-body">
+          <div class="proj-eyebrow">03</div>
+          <h3 class="pc-title">AuthKit Microservice</h3>
+          <div class="proj-result-sm">↑ JWT + refresh token flow</div>
+          <p class="pc-desc">Production auth system with rate limiting, email verification, and Helmet.js security hardening.</p>
+          <div class="pc-stack">
+            <span>Node.js</span><span>PostgreSQL</span><span>Resend</span>
+          </div>
+          <div class="proj-links">
+            <a href="#" class="proj-link">↗ Demo</a>
+            <a href="https://github.com" class="proj-link">⌥ GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Process -->
+    <div style="margin-top:6rem">
+      <div class="reveal">
+        <div class="sec-eyebrow">Process</div>
+        <h2 class="sec-title">How I <em>approach</em> every <span class="grad">project</span></h2>
+      </div>
+      <div class="process-grid">
+        <div class="proc-card reveal">
+          <div class="proc-num">01</div>
+          <h3 class="proc-title">Understand</h3>
+          <p class="proc-desc">Deep-dive into requirements. Design the data schema first. Ask hard questions before writing a single line of code.</p>
+        </div>
+        <div class="proc-card reveal">
+          <div class="proc-num">02</div>
+          <h3 class="proc-title">Architect</h3>
+          <p class="proc-desc">Clean separation — routes, controllers, services, database layer. Built to scale from day one, not refactored later.</p>
+        </div>
+        <div class="proc-card reveal">
+          <div class="proc-num">03</div>
+          <h3 class="proc-title">Build</h3>
+          <p class="proc-desc">One feature end-to-end at a time. Working code with tests before moving forward. No dead branches.</p>
+        </div>
+        <div class="proc-card reveal">
+          <div class="proc-num">04</div>
+          <h3 class="proc-title">Ship</h3>
+          <p class="proc-desc">Deploy with CI/CD, env configs, and migrations verified. Full documentation included on handoff.</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+</div>
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <span class="footer-copy">© 2026 Hassan Abdullah</span>
+    <div class="footer-links">
+      <a href="https://github.com/abdullah3566" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/hassan-abdullah-8177573a9/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:hassanabdullaho@gmail.com">Email</a>
+    </div>
+  </div>
+</footer>
+</div>
+
+<!-- ══════════════════════════════
+     CONTACT PAGE
+══════════════════════════════ -->
+<div class="page" id="page-contact" style="margin-top: -9%;">
+<div class="wrap">
+  <section class="section">
+
+    <div class="reveal">
+      <div class="sec-eyebrow">Get In Touch</div>
+      <h2 class="sec-title">Let's build something <em>real</em> <span class="grad">together</span></h2>
+    </div>
+
+    <div class="contact-grid">
+      <div class="reveal-left">
+        <p class="contact-intro">
+          Available for freelance work and full-time roles. If you have a problem
+          worth solving and a team worth joining, reach out. I reply within 24 hours.
+        </p>
+        <div class="contact-methods">
+          <a href="mailto:hassanabdullaho@gmail.com" class="cm">
+            <div class="cm-icon">✉</div>
+            <div><div class="cm-title">hassanabdullaho@gmail.com</div><div class="cm-sub">Best for project inquiries</div></div>
+            <span class="cm-arrow">→</span>
+          </a>
+          <a href="https://wa.me/03029274949" target="_blank" rel="noopener" class="cm">
+            <div class="cm-icon">💬</div>
+            <div><div class="cm-title">WhatsApp</div><div class="cm-sub">Quick chats & calls</div></div>
+            <span class="cm-arrow">→</span>
+          </a>
+          <a href="https://www.linkedin.com/in/hassan-abdullah-8177573a9/" target="_blank" rel="noopener" class="cm">
+            <div class="cm-icon cm-icon-txt">in</div>
+            <div><div class="cm-title">LinkedIn</div><div class="cm-sub">Professional connection</div></div>
+            <span class="cm-arrow">→</span>
+          </a>
+          <a href="https://github.com/abdullah3566" target="_blank" rel="noopener" class="cm">
+            <div class="cm-icon cm-icon-txt">GH</div>
+            <div><div class="cm-title">GitHub</div><div class="cm-sub">See all my code</div></div>
+            <span class="cm-arrow">→</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <form action="https://formspree.io/f/xnjloqlr" method="POST" 
+style="max-width:700px;margin:auto;font-family:Arial, sans-serif;color:#9fb3ff;">
+
+  <!-- ROW 1 -->
+  <div style="display:flex;gap:15px;margin-bottom:20px;">
+    
+    <div style="flex:1;">
+      <label style="font-size:12px;letter-spacing:2px;">NAME</label>
+      <input type="text" name="name" placeholder="Your name" required
+      style="width:100%;padding:14px;border-radius:10px;background:#0a1224;border:1px solid #1c2a4a;color:#9fb3ff;outline:none;">
+    </div>
+
+    <div style="flex:1;">
+      <label style="font-size:12px;letter-spacing:2px;">EMAIL</label>
+      <input type="email" name="email" placeholder="your@email.com" required
+      style="width:100%;padding:14px;border-radius:10px;background:#0a1224;border:1px solid #1c2a4a;color:#9fb3ff;outline:none;">
+    </div>
+
+  </div>
+
+  <!-- LOOKING FOR -->
+  <div style="margin-bottom:20px;">
+    <label style="font-size:12px;letter-spacing:2px;">LOOKING FOR</label>
+    <input type="text" name="looking_for" placeholder="Freelance project / Full-time role / Collaboration"
+    style="width:100%;padding:14px;border-radius:10px;background:#0a1224;border:1px solid #1c2a4a;color:#9fb3ff;outline:none;">
+  </div>
+
+  <!-- BUDGET -->
+  <div style="margin-bottom:20px;">
+    <label style="font-size:12px;letter-spacing:2px;">BUDGET (OPTIONAL)</label>
+    <input type="text" name="budget" placeholder="Open to discuss"
+    style="width:100%;padding:14px;border-radius:10px;background:#0a1224;border:1px solid #1c2a4a;color:#9fb3ff;outline:none;">
+  </div>
+
+  <!-- MESSAGE -->
+  <div style="margin-bottom:25px;">
+    <label style="font-size:12px;letter-spacing:2px;">MESSAGE</label>
+    <textarea name="message" placeholder="Tell me what you're building..." rows="5" required
+    style="width:100%;padding:14px;border-radius:10px;background:#0a1224;border:1px solid #1c2a4a;color:#9fb3ff;outline:none;"></textarea>
+  </div>
+
+  <!-- HIDDEN SUBJECT -->
+  <input type="hidden" name="_subject" value="New Portfolio Message">
+
+  <!-- BUTTON -->
+  <button type="submit"
+  style="width:100%;padding:16px;border:none;border-radius:12px;background:linear-gradient(90deg,#5a7cff,#6c8fff);color:white;font-size:16px;font-weight:600;cursor:pointer;box-shadow:0 0 20px rgba(90,124,255,0.4);transition:0.3s;">
+    Send Message →
+  </button>
+
+</form>
+      </div>
+    </div>
+
+  </section>
+</div>
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <span class="footer-copy">© 2026 Hassan Abdullah</span>
+    <div class="footer-links">
+      <a href="https://github.com/abdullah3566" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/hassan-abdullah-8177573a9/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:hassanabdullaho@gmail.com">Email</a>
+    </div>
+  </div>
+</footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
